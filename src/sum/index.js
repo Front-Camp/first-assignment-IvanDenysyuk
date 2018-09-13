@@ -11,6 +11,10 @@
 */
 const sum = (a, b) => {
   /* your logic here...*/
+  if( (typeof a !== 'number' || b  !== 'number') ) {
+    throw 'err'
+  }
+  return +(a+b);
 };
 
 export default sum;

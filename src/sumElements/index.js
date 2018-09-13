@@ -12,6 +12,9 @@
  */
 const sumElements = arr => {
   /* your logic here...*/
+  let isNum = n => isNaN(n) ? 0 : n
+  console.log(arr.reduce((a, b) => isNum(a) + isNum(b)))
+   return arr.reduce((a, b) => isNum(a) + isNum(b))
 };
 
 export default sumElements;
